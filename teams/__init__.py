@@ -11,7 +11,7 @@ players = [
     PlayerGreen2,
     AggressiveTitForTaTeam6,
     Team1DarkRed,
-    Prescient,
+#    Prescient, # Unorderable Mock?
     Fucker,
     Sane,
     Team3,

@@ -1,4 +1,4 @@
-import matplotlib
+#import matplotlib
 import axelrod
 from copy import deepcopy
 from axelrod import Player
@@ -35,8 +35,8 @@ class Sane(Player):
         return 'C'
 
 
-matplotlib.rc('xtick', labelsize=22)
-matplotlib.rc('font', size=22)
+#matplotlib.rc('xtick', labelsize=22)
+#matplotlib.rc('font', size=22)
 
 
 
@@ -54,5 +54,5 @@ if __name__ == '__main__':
     plot = axelrod.Plot(results)
     p = plot.boxplot()
 
-    from matplotlib.pyplot import show
-    show()
+    #from matplotlib.pyplot import show
+    #show()
