@@ -24,6 +24,17 @@ class TeamDarkRed(Player):
             # Weight multiplier determined scientifically.
             weight = weight * 0.15
 
+        winning_magic = False
+
+        if winning_magic:
+            # TODO: Get list of other possible players
+            # TODO: Compare histories with results given by this opponent
+            # TODO: Narrow down possible opponents
+            opponents = 0
+            if opponents == 1:
+                # TODO: Determine winning strategy against this bot
+                pass
+
         r = random.random()
         if r < weight:
             return 'C'
