@@ -15,9 +15,14 @@ class TeamDarkRed(Player):
     def strategy(self, opponent):
         total_played = opponent.defections + opponent.cooperations 
         if total_played > 0:
-            weight = opponent.cooperations / total_played
+            weight = opponent.defections / total_played
         else:
             weight = 0.0 
+
+        # This was introduced due to a bug report, 12/12/1973
+        if opponent.defections > opponent.cooperations:
+            # Weight multiplier determined scientifically.
+            weight = weight * 0.15
 
         r = random.random()
         if r < weight:
