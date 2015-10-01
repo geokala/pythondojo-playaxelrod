@@ -3,6 +3,7 @@ from .team1Green import PlayerGreen1, PlayerGreen2
 from .agressivetitfortat import AggressiveTitForTaTeam6
 from .team1partred import Team1DarkRed
 from .team5 import Prescient, Fucker, Sane
+from .team3 import (Team3)
 
 players = [ 
     Team4Bot,
@@ -13,4 +14,5 @@ players = [
     Prescient,
     Fucker,
     Sane,
+    Team3,
     ]
