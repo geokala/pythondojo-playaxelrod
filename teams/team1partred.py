@@ -1,7 +1,7 @@
 from axelrod import Player
 import random
 
-class TeamDarkRed(Player):
+class Team1DarkRed(Player):
     name = 'Player 1 Team Dark (Red)'
 
     classifier = {
