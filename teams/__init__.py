@@ -1,7 +1,6 @@
 import axelrod
 import teams.team1partred
-players = [
-    axelrod.strategies[0],
-    axelrod.strategies[1],
+
+players = axelrod.demo_strategies + [ 
     team1partred.TeamDarkRed,
-    ]
+]

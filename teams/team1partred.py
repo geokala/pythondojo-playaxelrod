@@ -1,4 +1,6 @@
 from axelrod import Player
+import random
+
 class TeamDarkRed(Player):
     name = 'Player 1 Team Dark (Red)'
 
@@ -11,6 +13,15 @@ class TeamDarkRed(Player):
     }
 
     def strategy(self, opponent):
-        print('Opp: %s' % opponent.history)
-        print('Me: %s' % self.history)
-        return 'D' or 'C'
+        total_played = opponent.defections + opponent.cooperations 
+        if total_played > 0:
+            weight = opponent.cooperations / total_played
+        else:
+            weight = 0.0 
+
+        r = random.random()
+        if r < weight:
+            return 'C'
+        return 'D' 
+        
+
